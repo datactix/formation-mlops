@@ -41,8 +41,8 @@ class FastTextWrapper(mlflow.pyfunc.PythonModel):
     def predict(
         self,
         context: mlflow.pyfunc.PythonModelContext,
-        model_input: List,
-        params: Optional[Dict[str, Any]] = None
+        model_input: List[str],
+        params: Optional[Dict[str, Any]]
     ) -> Tuple:
         """
         Predicts the most likely codes for a list of texts.

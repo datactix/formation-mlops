@@ -15,13 +15,13 @@ spec:
     spec:
       containers:
         - name: api
-          image: inseefrlab/formation-mlops:no-logs
+          image: inseefrlab/formation-mlops:main
           imagePullPolicy: Always
           env:
             - name: MLFLOW_TRACKING_URI
-              value: https://user-<your-sspcloud-id>-<pod_id>.user.lab.sspcloud.fr
+              value: https://user-datactix-mlflow.user.lab.sspcloud.fr
             - name: MLFLOW_MODEL_NAME
-              value: fasttext
+              value: fasttext5
             - name: MLFLOW_MODEL_VERSION
               value: "1"
           resources:
