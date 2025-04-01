@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: ExeioS33/formation-mlops@5f78227
+          image: exeio/codification-api:v1.0.0
           imagePullPolicy: Always
           env:
             - name: MLFLOW_TRACKING_URI
