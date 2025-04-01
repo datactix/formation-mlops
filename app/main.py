@@ -112,8 +112,7 @@ async def predict(
 #        "k": nb_echoes_max,
 #    }
 
-    predictions = model.predict(description)
-#   predictions = model.predict([description], params={"k": nb_echoes_max})
+    predictions = model.predict([description], params={"k": nb_echoes_max})
 
     # Logging
     logging.info(f"{{'Query': {description}, 'Response': {predictions[0]}}}")
